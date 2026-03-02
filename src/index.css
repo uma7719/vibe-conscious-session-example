@@ -2,46 +2,29 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
   
-  --color-earth-50: #fdfcfb;
-  --color-earth-100: #f5f2ed;
-  --color-earth-200: #e8e1d5;
-  --color-earth-300: #d1c3af;
-  --color-earth-400: #b5a084;
-  --color-earth-500: #9c8464;
-  --color-earth-600: #856d51;
-  --color-earth-700: #6f5a44;
-  --color-earth-800: #5a4938;
-  --color-earth-900: #4a3d2f;
-  
-  --color-moss-50: #f4f7f2;
-  --color-moss-100: #e6ede1;
-  --color-moss-200: #cfdbca;
-  --color-moss-300: #adc1a4;
-  --color-moss-400: #86a27a;
-  --color-moss-500: #66845a;
-  --color-moss-600: #516a47;
-  --color-moss-700: #42563b;
-  --color-moss-800: #384833;
-  --color-moss-900: #303d2d;
+  --color-agri-cream: #fdfcf9;
+  --color-agri-olive: #4a5d23;
+  --color-agri-earth: #8b5e3c;
+  --color-agri-ink: #1a1a1a;
 }
 
 @layer base {
   body {
-    @apply bg-earth-100 text-earth-900 font-sans;
+    @apply bg-agri-cream text-agri-ink font-sans antialiased;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4 {
     @apply font-serif;
   }
 }
 
 .glass-card {
-  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-sm;
 }
 
-.organic-pill {
-  @apply rounded-full px-4 py-1 text-sm font-medium transition-all duration-300;
+.bold-heading {
+  @apply font-serif font-bold tracking-tight leading-none;
 }
